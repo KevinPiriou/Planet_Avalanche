@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.5, minimum-scale=1">
     <Link rel="Stylesheet" type="text/css" href="menu.css">
     <script src='https://kit.fontawesome.com/87a79565e0.js' crossorigin='anonymous'></script>
-
-    <title>PLANET AVALANCHE</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/116/116859.png">
+    <title>PLANET AVALANCHE 🪐</title>
 </head>
 
 <body class="share-gradient-animation">
@@ -15,22 +15,36 @@
                 <h1 id="title-game">
                     <p>🪐</p>
                     PLANET-AVALANCHE</h1>
-                <div id="Optionmenu"></div>
+                <div id="Optionmenu">
+
+                    <table id="TableModOptionMenu">
+                        <tr>
+                            <th><h3>Nombre d'Asteroid</h3></th>
+                            <th><h3>Vitesse des Asteroid</h3></th>
+                        </tr>
+                        <tr>
+                            <th><input type="number" id="NbRock" min="10" max="100"></th>
+                            <th><input type="number" id="RockSpeed" min="10" max="100"></th>
+                        </tr>
+                    </table>
+
+                </div>
                 <div id="ScoreTotal"></div>
 
                 <div id="tuto">
-                    <p> | GET <i class='fas fa-atom' style="font-size:24px;color:rgb(255, 125, 147);"></i> FOR SCORING |</p>
+                <h3><p> | GET <i class='fas fa-atom' style="font-size:24px;color:rgb(255, 125, 147);"></i> FOR SCORING |</p>
                     <p> | DODGE ENEMIES WITH CONTROLS
                         <i class='fas fa-arrow-circle-left' style="font-size:24px;color:cyan"></i>
                         <i class='fas fa-arrow-circle-up' style="font-size:24px;color:cyan"></i>
                         <i class='fas fa-arrow-circle-down' style="font-size:24px;color:cyan"></i>
                         <i class='fas fa-arrow-circle-right' style="font-size:24px;color:cyan"></i> |</p>
-                    <p> | YOU CAN CHANGE OPTION <i class='fas fa-hand-spock' style='font-size:24px;color:yellow'></i>|</p>
+                    <p> | YOU CAN CHANGE OPTION <i class='fas fa-hand-spock' style='font-size:24px;color:yellow'></i>|</p></h1>
                 </div>
 
                 <div id="ZoneBtn" class="btn-group">
-                    <button class="blue blinking" id="btnNew"><h2> 👽 NEW GAME 👽</h2></button><br>
-                    <button class="blue blinking" id="btnCredit"><h2> ☢️ OPTIONS ☢️ </h2></button><br>
+                    <button class="blue blinking" id="btnNew"><h2> 👽 NEW GAME 👽 </h2></button><br>
+                    <button class="blue blinking" id="btnOption"><h2> ☢️ OPTIONS ☢️ </h2></button><br>
+                    <input id="XAudioVolume"type="range" min="0" max="1" step="0.01" >
                 </div>
         </div>
     </div>

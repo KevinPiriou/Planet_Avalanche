@@ -7,6 +7,10 @@
 	 font-weight: 500;
 	 font-family: 'Monoton', cursive;
 }
+h3 {
+	font-family: 'Monoton', cursive;
+}
+
 
  .container {
 	 width: 100%;
@@ -66,8 +70,8 @@
 	 justify-content: center;
 }
 
- #credit {
-	 display: flex;
+ #Optionmenu {
+	 display: none;
 	 justify-content: center;
 }
 
@@ -96,8 +100,18 @@
 	 margin: 1em;
 	 animation: blinking_borderExit 1s infinite;
 }
+#btnOptionValider {
+	background-color: #324b4b;
+	border-radius: 30px;
+	padding: 1.2em 5em;
+	letter-spacing: 0.35em;
+	font-size: 0.7em;
+	transition: background-color 1s, box-shadow 1s, color 1s;
+	margin: 1em;
+	animation: blinking_borderExit 1s infinite;
+}
 
- #btnCredit {
+ #btnOption {
 	 background-color: #324b4b;
 	 border-radius: 30px;
 	 padding: 1.2em 5em;
@@ -142,25 +156,63 @@
 	}
 }
 
- #gameroom {
-	 width: 1500px;
-	 height: 900px;
-	 background: #101820;
-	 background-image: url("http://image.noelshack.com/fichiers/2022/10/3/1646826142-fondmenugame.jpg");
-	 background-size: cover;
+#gameroom {
+	width: 1500px;
+	height: 900px;
+	background: #101820;
+	background-image: url("http://image.noelshack.com/fichiers/2022/10/3/1646826142-fondmenugame.jpg");
+	background-size: cover;
 }
 
- #ScoreTotal {
-	 display: flex;
-	 justify-content: center;
-	 color: red;
+#ScoreTotal {
+	display: flex;
+	justify-content: center;
+	color: red;
+	font-family: 'Monoton', cursive;
+	font-weight: 500;
 }
 
- #debug {
-	 color: white;
-	 display: inline-flex;
-	 align-content: center;
+
+#TableModOptionMenu {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
 }
+  
+#TableModOptionMenu td, #TableModOptionMenu th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#TableModOptionMenu td, #TableModOptionMenu th input {
+	border: 2px solid transparent;
+	border-radius: 4px;
+}
+
+#TableModOptionMenu th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: #324b4b;
+	color: white;
+}
+
+
+#XAudioVolume {
+	display: flex;
+	-webkit-appearance: none;
+	width: 10%;
+	height: 10px;
+	border-radius: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity:0.7;
+	-webkit-transition: opacity .15s ease-in-out;
+	transition: opacity .15s ease-in-out;
+  }
+  #XAudioVolume:hover {
+	opacity:1;
+  }
 
  @-webkit-keyframes text-flicker-in-glow {
 	 0% {
